@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+body {
+    background-color: #eaeef6;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1000px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transform: translateY(65px);
+}
+
+.container .card-one, .card-two, .card-three {
+    background-color: white;
+    width: 300px;
+    height: 293px;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.container .card-two {
+    width: 300px;
+    height: 389px;
+    padding: 10px;
+}
+
+.parent .container .card-one .features {
+    background-color: #f1eeff;
+    width: 70px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    color: #6558d3;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.parent .container .card-one .meeting {
+    padding-top: 16px;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: #141b22;
+}
+
+.parent .container .card-one .long {
+    color: #a0a0a0;
+    line-height: 1.5;
+}
+
+.parent .container .card-one .sm-ct {
+    padding-top: 20px;
+} 
+
+.parent .container .card-one .learn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #6558d3;
+    border-radius: 6px;
+    width: 150.63px;
+    height: 44px;
+    font-size: 15px;
+    color: #6558d3;
+    font-weight: 600;
+    padding: 16px;
+}
+
+.parent .container .card-one .learn:hover {
+    color: white;
+    background-color: #6558d3;
+}
+
+@media (max-width: 976px) {
+    .container {
+        justify-content: center;
+        height: 130vh;
+    }
+
+    .container .card-one, .card-two, .card-three {
+        margin: 30px;
+    }
+
+}
+
+.parent .container .card-two .c2 {
+    background-color: #ffedec;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    padding: 40px 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.parent .container .card-two .c2::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 99em 0 0 99em;
+    width: 94.11px;
+    height: 55px;
+    background-color: #fbc8be;
+}
+
+.parent .container .card-two .c2 p {
+    color: #917072;
+}
+
+.parent .container .card-two .c2 .mo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #754D42;
+}
+
+.parent .container .card-two .c2 .m {
+    position: absolute;
+    right: 15px;
+    z-index: 2;
+    top: 15px;
+}
+
+.parent .container .card-two .c2 h2 {
+    color: #754d42;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.parent .container .card-two .c2 .info {
+    margin-top: 12px;
+    color: #917072;
+}
+
+.parent .container .card-two .c2 .tick {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent .container .card-two .c2 .tick li {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.parent .container .card-two .c2 .tick li .icon {
+    width: 20px;
+    height: 20px;
+    background-color: #1FCAC5;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent .container .card-two .c2 .tick li .icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.parent .container .c2 .button {
+    margin-top: 20px;
+    font-size: 1.125rem;
+    background-color: #6558d3;
+    width: 100%;
+    height: 63px;
+    padding: 1em;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(20px);
+}
+
+.parent .container .c2 .button:hover {
+    background-color: #4133b7;
+}
+
+.parent .container .card-three .head {
+    font-size: 24;
+    color: #141b22;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+.parent .container .card-three .inf {
+    margin-top: 16px;
+    color: #a0a0a0;
+    line-height: 1.25;
+}
+
+.parent .container .card-three .gg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.parent .container .card-three .gg div {
+    width: 118px;
+    height: 77px;
+    background-color: #f1eeff;
+    color: #6558d3;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 737px) {
+    .kbeer {
+        margin-bottom: 390px;
+    }
+}
